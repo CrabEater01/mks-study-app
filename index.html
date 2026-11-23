@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MSK Anatomy Quiz</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">MSK Anatomy Quiz</div>
+  <nav>
+    <button data-view="quiz" class="nav active">Quiz</button>
+    <button data-view="review" class="nav">Arrow review</button>
+    <button data-view="browse" class="nav">Browse</button>
+    <button data-view="settings" class="nav">Settings</button>
+  </nav>
+</header>
+
+<main>
+  <!-- QUIZ -->
+  <section id="view-quiz" class="view active">
+    <div class="quizbar">
+      <div id="quiz-scope" class="muted"></div>
+      <div id="quiz-stats" class="stats"></div>
+    </div>
+    <div id="quiz-empty" class="card hidden"></div>
+    <div id="quiz-card" class="card hidden">
+      <div class="figure-wrap"><div id="quiz-figure" class="figure"></div></div>
+      <div class="answer-row">
+        <input id="answer" type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Name the structure at the arrow, then press Enter">
+        <button id="btn-submit" class="primary">Check</button>
+      </div>
+      <div class="tools-row">
+        <button id="btn-hint" class="ghost">Hint</button>
+        <button id="btn-dontknow" class="ghost">I don't know</button>
+        <button id="btn-labeled" class="ghost">Show labeled plate</button>
+        <span class="spacer"></span>
+        <button id="btn-remove" class="ghost danger" title="Never ask this term again (restore it in Settings)">Remove term</button>
+      </div>
+      <div id="hint" class="hint hidden"></div>
+      <div id="feedback" class="feedback hidden"></div>
+      <div id="credit" class="credit"></div>
+    </div>
+  </section>
+
+  <!-- REVIEW -->
+  <section id="view-review" class="view">
+    <div class="card">
+      <h2>Arrow review <span class="muted small">(optional)</span></h2>
+      <p class="muted">Check that each arrow points at the named structure. Drag the arrow tip to move it, use the rotate buttons to turn it, then confirm. You can skip this entirely; the quiz uses every arrow that hasn't been marked wrong.</p>
+      <div class="review-controls">
+        <label>Show <select id="review-filter">
+          <option value="unreviewed">Not yet reviewed</option>
+          <option value="all">All arrows</option>
+          <option value="flagged">Marked wrong</option>
+          <option value="edited">Moved by me</option>
+        </select></label>
+        <label>Section <select id="review-section"><option value="">All sections</option></select></label>
+        <span id="review-count" class="muted"></span>
+      </div>
+    </div>
+    <div id="review-card" class="card">
+      <div class="review-title"><span id="review-term"></span><span id="review-pos" class="muted"></span></div>
+      <div class="figure-wrap"><div id="review-figure" class="figure"></div></div>
+      <div class="tools-row">
+        <button id="rv-prev" class="ghost">◀ Prev</button>
+        <button id="rv-rotl" class="ghost" title="Rotate arrow">↺</button>
+        <button id="rv-rotr" class="ghost" title="Rotate arrow">↻</button>
+        <button id="rv-labeled" class="ghost">Labeled plate</button>
+        <button id="rv-reset" class="ghost">Undo my changes</button>
+        <span class="spacer"></span>
+        <button id="rv-bad" class="ghost danger">Wrong / unclear</button>
+        <button id="rv-ok" class="primary">Looks right ✓</button>
+        <button id="rv-next" class="ghost">Skip ▶</button>
+      </div>
+      <div id="review-note" class="muted small"></div>
+    </div>
+  </section>
+
+  <!-- BROWSE -->
+  <section id="view-browse" class="view">
+    <div class="card">
+      <h2>Browse terms</h2>
+      <div class="review-controls">
+        <input id="browse-search" type="search" placeholder="Search terms…">
+        <label><input type="checkbox" id="browse-missing"> Only terms with no image</label>
+        <span id="browse-count" class="muted"></span>
+      </div>
+    </div>
+    <div id="browse-list"></div>
+    <div id="browse-modal" class="modal hidden">
+      <div class="modal-inner card">
+        <div class="review-title"><span id="bm-title"></span><button id="bm-close" class="ghost">Close ✕</button></div>
+        <div class="figure-wrap"><div id="bm-figure" class="figure"></div></div>
+        <div class="tools-row"><button id="bm-prev" class="ghost">◀ Other image</button><button id="bm-labeled" class="ghost">Labeled plate</button><button id="bm-next" class="ghost">Other image ▶</button><span id="bm-pos" class="muted"></span></div>
+        <div id="bm-credit" class="credit"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SETTINGS -->
+  <section id="view-settings" class="view">
+    <div class="card">
+      <h2>Quiz settings</h2>
+      <div class="settings-grid">
+        <label>A term leaves the pool after
+          <select id="set-needed"><option value="1">1 correct answer</option><option value="2">2 correct answers</option><option value="3">3 correct answers</option></select>
+        </label>
+        <label>Misspellings
+          <select id="set-typo"><option value="ask">Close ones: let me choose pass or fail</option><option value="accept">Close ones: count as correct</option><option value="strict">Exact spelling only</option></select>
+        </label>
+        <label>Missed terms come back
+          <select id="set-requeue"><option value="soon">Soon (a few cards later)</option><option value="end">At the end of the round</option></select>
+        </label>
+        <label>Order
+          <select id="set-order"><option value="random">Random</option><option value="section">By section, random within</option><option value="weak">Weakest terms first</option></select>
+        </label>
+        <label class="check"><input type="checkbox" id="set-autoadvance"> Move on automatically after a correct answer</label>
+        <label class="check"><input type="checkbox" id="set-typeword"> Require the type word (e.g. "artery", "nerve"); "muscle" is always optional</label>
+        <label class="check"><input type="checkbox" id="set-reviewedonly"> Only use arrows I've confirmed in Arrow review</label>
+        <label class="check"><input type="checkbox" id="set-varyimage"> Use a different image each time when a term has several</label>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Sections</h2>
+      <p class="muted">Untick to exclude a section. "Focus" quizzes only that section (click again to clear).</p>
+      <div class="tools-row"><button id="sec-all" class="ghost">Include all</button><button id="sec-none" class="ghost">Exclude all</button><button id="sec-clearfocus" class="ghost">Clear focus</button></div>
+      <div id="section-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>Removed terms</h2>
+      <div id="removed-list" class="muted"></div>
+    </div>
+
+    <div class="card">
+      <h2>Progress and backup</h2>
+      <p class="muted">Progress, settings and your arrow corrections save automatically in this browser. Export a backup file to move them to another browser or computer.</p>
+      <div class="tools-row">
+        <button id="btn-export" class="ghost">Export backup</button>
+        <label class="ghost filebtn">Import backup<input id="file-import" type="file" accept=".json,application/json"></label>
+        <span class="spacer"></span>
+        <button id="btn-reset-progress" class="ghost danger">Reset quiz progress</button>
+      </div>
+      <div id="backup-msg" class="muted small"></div>
+    </div>
+
+    <div class="card">
+      <h2>Image sources</h2>
+      <p class="muted">All images are public domain or openly licensed. Labels were digitally removed for quizzing; the original labeled plate is one click away.</p>
+      <div id="sources-list" class="small"></div>
+    </div>
+  </section>
+</main>
+
+<script src="data/terms.js"></script>
+<script src="data/images.js"></script>
+<script src="data/arrows.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
