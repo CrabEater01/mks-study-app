@@ -275,20 +275,27 @@ function submit(){
     $('#cl-pass').onclick=()=>{answered=true; record(true); fb.className='feedback ok'; fb.innerHTML=`<div class="big">✓ Passed</div><div class="answer">${esc(current.name)}</div>`; $('#btn-submit').textContent='Next (Enter)'; lockKeys(); holdFocus();};
     $('#cl-fail').onclick=()=>{answered=true; record(false); showWrong(text,null);};
     lockKeys(); holdFocus();
+  } else if(S.settings.typo==='askall'){
+    const other=g.kind==='other'?g.other:null;
+    showWrong(text, other, true);
+    $('#cl-pass').onclick=()=>{answered=true; record(true); fb.className='feedback ok'; fb.innerHTML=`<div class="big">✓ Passed</div><div class="answer">${esc(current.name)} · you typed “${esc(text)}”</div>`; $('#btn-submit').textContent='Next (Enter)'; lockKeys(); holdFocus();};
+    $('#cl-fail').onclick=()=>{answered=true; record(false); showWrong(text, other);};
   } else {
     answered=true; record(false); showWrong(text, g.kind==='other'?g.other:null);
   }
 }
-function showWrong(text, other){
-  const fb=$('#feedback'); fb.className='feedback no';
-  let html=`<div class="big" style="color:var(--bad)">✗ Incorrect</div><div class="answer">Answer: <b>${esc(current.name)}</b>${text.trim()?` · you typed “${esc(text)}”`:''}</div>`;
+function showWrong(text, other, choose){
+  const fb=$('#feedback'); fb.className='feedback '+(choose?'close':'no');
+  let html=choose?`<div class="big">Not a match. Your call:</div><div class="tools-row" style="margin:6px 0 8px"><button class="good" id="cl-pass">Count it (pass)</button><button class="bad" id="cl-fail">Count it wrong (fail)</button></div>`
+    :`<div class="big" style="color:var(--bad)">✗ Incorrect</div>`;
+  html+=`<div class="answer">Answer: <b>${esc(current.name)}</b>${text.trim()?` · you typed “${esc(text)}”`:''}</div>`;
   if(other){
     const oa=arrowsFor(other.id)[0];
     html+=`<div class="other"><div>“${esc(text)}” is the <b>${esc(other.name)}</b>${oa?', shown here:':' (no image for it yet).'}</div>${oa?'<div class="figure-wrap" style="margin-top:8px"><div class="figure" id="other-fig"></div></div><div class="credit" id="other-credit"></div>':''}</div>`;
     fb.innerHTML=html;
     if(oa){ drawFigure($('#other-fig'),oa); $('#other-credit').innerHTML=creditHTML(oa.img); }
   } else fb.innerHTML=html;
-  $('#answer').disabled=true; $('#btn-submit').textContent='Next (Enter)'; lockKeys(); holdFocus();
+  $('#answer').disabled=true; if(!choose) $('#btn-submit').textContent='Next (Enter)'; lockKeys(); holdFocus();
 }
 $('#btn-submit').onclick=submit;
 // One Enter handler for the quiz: Enter checks, the next Enter (a deliberate new press) moves on.
