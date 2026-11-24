@@ -423,15 +423,6 @@ window.MSK_ARROWS=[
 "note": ""
 },
 {
-"id": "serratus-posterior-inferior-muscle@Gray409",
-"term": "serratus-posterior-inferior-muscle",
-"img": "Gray409",
-"x": 0.6667,
-"y": 0.5978,
-"a": 0,
-"note": ""
-},
-{
 "id": "lumbar-triangle@Gray409",
 "term": "lumbar-triangle",
 "img": "Gray409",
@@ -2475,15 +2466,6 @@ window.MSK_ARROWS=[
 "note": ""
 },
 {
-"id": "inferior-gemellus-muscle@Gray434",
-"term": "inferior-gemellus-muscle",
-"img": "Gray434",
-"x": 0.625,
-"y": 0.2576,
-"a": 140,
-"note": ""
-},
-{
 "id": "quadratus-femoris-muscle@Gray434",
 "term": "quadratus-femoris-muscle",
 "img": "Gray434",
@@ -3893,6 +3875,24 @@ window.MSK_ARROWS=[
 "img": "user_sciatic-nerve",
 "x": 0.6897,
 "y": 0.4535,
+"a": 0,
+"note": ""
+},
+{
+"id": "inferior-gemellus-muscle@user_inferior-gemellous-muscle",
+"term": "inferior-gemellus-muscle",
+"img": "user_inferior-gemellous-muscle",
+"x": 0.6024,
+"y": 0.4581,
+"a": 330,
+"note": ""
+},
+{
+"id": "serratus-posterior-inferior-muscle@user_serratus-posterior-inferior",
+"term": "serratus-posterior-inferior-muscle",
+"img": "user_serratus-posterior-inferior",
+"x": 0.6002,
+"y": 0.6253,
 "a": 0,
 "note": ""
 }

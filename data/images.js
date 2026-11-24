@@ -658,5 +658,25 @@ window.MSK_IMAGES={
 "author": "Supplied by Samuel",
 "license": "Personal study use",
 "source": ""
+},
+"user_inferior-gemellous-muscle": {
+"clean": "images/user_inferior-gemellous-muscle.jpg",
+"labeled": "images/user_inferior-gemellous-muscle.jpg",
+"w": 1394,
+"h": 1400,
+"title": "Inferior gemellous muscle.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_serratus-posterior-inferior": {
+"clean": "images/user_serratus-posterior-inferior.jpg",
+"labeled": "images/user_serratus-posterior-inferior.jpg",
+"w": 1168,
+"h": 878,
+"title": "Serratus posterior inferior.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
 }
 };
