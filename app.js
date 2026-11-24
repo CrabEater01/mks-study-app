@@ -23,7 +23,17 @@ function load(){
   s.arrowEdits = s.arrowEdits||{};   // arrowId -> {x,y,a,status:'ok'|'bad'|undefined,moved}
   return s;
 }
-function save(){ try{ localStorage.setItem(STORE_KEY, JSON.stringify(S)); }catch(e){} }
+function save(){
+  try{ localStorage.setItem(STORE_KEY, JSON.stringify(S)); }
+  catch(e){ storageWarn('Your progress could not be saved in this browser'+(e&&e.name==='QuotaExceededError'?' (storage is full)':'')+'. Use Settings → Export backup to keep it.'); }
+}
+function storageWarn(msg){ const w=document.getElementById('storage-warn'); if(w){ w.textContent='⚠ '+msg; w.classList.remove('hidden'); } }
+// Check that this browser really keeps data, and ask it not to clear our data on its own.
+(function checkStorage(){
+  try{ localStorage.setItem('mskQuiz.test','1'); if(localStorage.getItem('mskQuiz.test')!=='1') throw 0; localStorage.removeItem('mskQuiz.test'); }
+  catch(e){ setTimeout(()=>storageWarn('This browser is not saving progress (private/incognito window, or opened inside another app). Open the link in normal Safari or Chrome.'),0); }
+  try{ navigator.storage && navigator.storage.persist && navigator.storage.persist(); }catch(e){}
+})();
 
 /* ---------------- arrows ---------------- */
 function arrow(a0){
@@ -205,7 +215,8 @@ function scopeLabel(){
 }
 function updateStats(){
   const el=eligibleTerms(); const m=el.filter(mastered).length;
-  $('#quiz-stats').innerHTML=`<span>Done <b>${m}</b>/<b>${el.length}</b></span><span>Left <b>${el.length-m}</b></span><span class="muted">Session ✓<b>${session.right}</b> ✗<b>${session.wrong}</b></span>`;
+  let allR=0, allW=0; for(const k in S.progress){ allR+=S.progress[k].c||0; allW+=S.progress[k].w||0; }
+  $('#quiz-stats').innerHTML=`<span>Done <b>${m}</b>/<b>${el.length}</b></span><span>Left <b>${el.length-m}</b></span><span class="muted">All time ✓<b>${allR}</b> ✗<b>${allW}</b></span><span class="muted">This visit ✓<b>${session.right}</b> ✗<b>${session.wrong}</b></span>`;
   $('#quiz-scope').textContent=scopeLabel()+` · leaves pool after ${S.settings.needed} correct`;
 }
 
