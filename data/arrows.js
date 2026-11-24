@@ -4066,5 +4066,50 @@ window.MSK_ARROWS=[
 "y": 0.56,
 "a": 315,
 "note": ""
+},
+{
+"id": "annular-ligament@user_annular-ligament",
+"term": "annular-ligament",
+"img": "user_annular-ligament",
+"x": 0.4705,
+"y": 0.6649,
+"a": 180,
+"note": ""
+},
+{
+"id": "iliotibial-tract@user_iliotibial-tract",
+"term": "iliotibial-tract",
+"img": "user_iliotibial-tract",
+"x": 0.5035,
+"y": 0.5995,
+"a": 180,
+"note": ""
+},
+{
+"id": "radial-collateral-ligament-elbow@user_radial-collateral-ligament",
+"term": "radial-collateral-ligament-elbow",
+"img": "user_radial-collateral-ligament",
+"x": 0.2799,
+"y": 0.5465,
+"a": 225,
+"note": ""
+},
+{
+"id": "ulnar-collateral-ligament-elbow@user_ulnar-collateral-ligament",
+"term": "ulnar-collateral-ligament-elbow",
+"img": "user_ulnar-collateral-ligament",
+"x": 0.6182,
+"y": 0.7636,
+"a": 135,
+"note": ""
+},
+{
+"id": "vastus-intermedius-muscle@user_vastus-intermedias-muscle",
+"term": "vastus-intermedius-muscle",
+"img": "user_vastus-intermedias-muscle",
+"x": 0.52,
+"y": 0.5731,
+"a": 180,
+"note": ""
 }
 ];

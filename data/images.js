@@ -948,5 +948,55 @@ window.MSK_IMAGES={
 "author": "Supplied by Samuel",
 "license": "Personal study use",
 "source": ""
+},
+"user_annular-ligament": {
+"clean": "images/user_annular-ligament.jpg",
+"labeled": "images/user_annular-ligament.jpg",
+"w": 848,
+"h": 740,
+"title": "Annular ligament.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_iliotibial-tract": {
+"clean": "images/user_iliotibial-tract.jpg",
+"labeled": "images/user_iliotibial-tract.jpg",
+"w": 856,
+"h": 1306,
+"title": "Iliotibial tract.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_radial-collateral-ligament": {
+"clean": "images/user_radial-collateral-ligament.jpg",
+"labeled": "images/user_radial-collateral-ligament.jpg",
+"w": 768,
+"h": 752,
+"title": "Radial collateral ligament.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_ulnar-collateral-ligament": {
+"clean": "images/user_ulnar-collateral-ligament.jpg",
+"labeled": "images/user_ulnar-collateral-ligament.jpg",
+"w": 1100,
+"h": 990,
+"title": "Ulnar collateral ligament.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_vastus-intermedias-muscle": {
+"clean": "images/user_vastus-intermedias-muscle.jpg",
+"labeled": "images/user_vastus-intermedias-muscle.jpg",
+"w": 1098,
+"h": 958,
+"title": "Vastus intermedias muscle.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
 }
 };

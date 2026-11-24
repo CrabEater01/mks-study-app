@@ -366,8 +366,7 @@ window.MSK_TERMS={
 "terms": [
 "ulnar-collateral-ligament-elbow",
 "radial-collateral-ligament-elbow",
-"annular-ligament",
-"proximal-radioulnar-joint"
+"annular-ligament"
 ]
 },
 {
@@ -375,14 +374,12 @@ window.MSK_TERMS={
 "lab": "L08 Anterior & Medial Thigh",
 "name": "Anterior thigh",
 "terms": [
-"fascia-lata",
 "great-saphenous-vein",
 "saphenous-nerve",
 "femoral-vein",
 "iliotibial-tract",
 "tensor-fasciae-latae-muscle",
 "sartorius-muscle",
-"quadriceps-femoris-muscle",
 "rectus-femoris-muscle",
 "vastus-lateralis-muscle",
 "vastus-medialis-muscle",
@@ -395,14 +392,10 @@ window.MSK_TERMS={
 "iliopsoas-muscle",
 "pectineus-muscle",
 "femoral-canal",
-"femoral-sheath",
 "femoral-artery",
 "femoral-nerve",
-"femoral-branch-of-genitofemoral-nerve",
 "deep-femoral-artery",
 "lateral-femoral-circumflex-artery",
-"ascending-branch-of-lateral-femoral-circumflex-artery",
-"transverse-branch-of-lateral-femoral-circumflex-artery",
 "descending-branch-of-lateral-femoral-circumflex-artery",
 "medial-femoral-circumflex-artery"
 ]
@@ -437,7 +430,6 @@ window.MSK_TERMS={
 "lab": "L09 Anterior & Lateral Leg, Dorsum of Foot",
 "name": "Anterior leg and dorsum of foot",
 "terms": [
-"crural-fascia",
 "great-saphenous-vein",
 "medial-malleolus",
 "lateral-sural-cutaneous-nerve",
@@ -512,7 +504,6 @@ window.MSK_TERMS={
 "terms": [
 "small-saphenous-vein",
 "popliteal-fossa",
-"crural-fascia",
 "gastrocnemius-muscle",
 "biceps-femoris-muscle",
 "semimembranosus-muscle",
@@ -2398,26 +2389,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "proximal-radioulnar-joint",
-"name": "Proximal radioulnar joint",
-"aliases": [
-"superior radioulnar joint"
-],
-"sections": [
-"l07-elbow-and-radioulnar-joints"
-]
-},
-{
-"id": "fascia-lata",
-"name": "Fascia lata",
-"aliases": [
-"fascia latae"
-],
-"sections": [
-"l08-anterior-thigh"
-]
-},
-{
 "id": "great-saphenous-vein",
 "name": "Great saphenous vein",
 "aliases": [
@@ -2471,16 +2442,6 @@ window.MSK_TERMS={
 "id": "sartorius-muscle",
 "name": "Sartorius muscle",
 "aliases": [],
-"sections": [
-"l08-anterior-thigh"
-]
-},
-{
-"id": "quadriceps-femoris-muscle",
-"name": "Quadriceps femoris muscle",
-"aliases": [
-"quadriceps"
-],
 "sections": [
 "l08-anterior-thigh"
 ]
@@ -2597,14 +2558,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "femoral-sheath",
-"name": "Femoral sheath",
-"aliases": [],
-"sections": [
-"l08-anterior-thigh"
-]
-},
-{
 "id": "femoral-artery",
 "name": "Femoral artery",
 "aliases": [],
@@ -2616,17 +2569,6 @@ window.MSK_TERMS={
 "id": "femoral-nerve",
 "name": "Femoral nerve",
 "aliases": [],
-"sections": [
-"l08-anterior-thigh"
-]
-},
-{
-"id": "femoral-branch-of-genitofemoral-nerve",
-"name": "Femoral branch of genitofemoral nerve",
-"aliases": [
-"lumboinguinal nerve",
-"femoral branch"
-],
 "sections": [
 "l08-anterior-thigh"
 ]
@@ -2647,26 +2589,6 @@ window.MSK_TERMS={
 "name": "Lateral femoral circumflex artery",
 "aliases": [
 "lateral circumflex femoral artery"
-],
-"sections": [
-"l08-anterior-thigh"
-]
-},
-{
-"id": "ascending-branch-of-lateral-femoral-circumflex-artery",
-"name": "Ascending branch of lateral femoral circumflex artery",
-"aliases": [
-"ascending branch"
-],
-"sections": [
-"l08-anterior-thigh"
-]
-},
-{
-"id": "transverse-branch-of-lateral-femoral-circumflex-artery",
-"name": "Transverse branch of lateral femoral circumflex artery",
-"aliases": [
-"transverse branch"
 ],
 "sections": [
 "l08-anterior-thigh"
@@ -2772,17 +2694,6 @@ window.MSK_TERMS={
 "sections": [
 "l09-lateral-leg",
 "l09-anterior-leg-and-dorsum-of-foot"
-]
-},
-{
-"id": "crural-fascia",
-"name": "Crural fascia",
-"aliases": [
-"deep fascia of leg"
-],
-"sections": [
-"l09-anterior-leg-and-dorsum-of-foot",
-"l10-popliteal-fossa"
 ]
 },
 {
