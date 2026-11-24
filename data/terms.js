@@ -441,7 +441,6 @@ window.MSK_TERMS={
 "deep-fibular-nerve",
 "extensor-retinaculum-foot",
 "dorsalis-pedis-artery",
-"lateral-tarsal-artery",
 "arcuate-artery",
 "dorsal-metatarsal-arteries",
 "deep-plantar-artery",
@@ -473,8 +472,6 @@ window.MSK_TERMS={
 "quadratus-femoris-muscle",
 "sacrotuberous-ligament",
 "sacrospinous-ligament",
-"internal-pudendal-artery",
-"internal-pudendal-vein",
 "pudendal-nerve",
 "sural-nerve",
 "great-saphenous-vein",
@@ -523,7 +520,6 @@ window.MSK_TERMS={
 "lab": "L11 Posterior Leg, Sole, LE Joints",
 "name": "Posterior leg",
 "terms": [
-"triceps-surae-muscle",
 "gastrocnemius-muscle",
 "soleus-muscle",
 "plantaris-muscle",
@@ -535,10 +531,7 @@ window.MSK_TERMS={
 "posterior-tibial-artery",
 "fibular-artery",
 "tibial-nerve",
-"flexor-retinaculum-foot",
-"medial-malleolus",
-"posterior-tibial-vein",
-"sustentaculum-tali"
+"medial-malleolus"
 ]
 },
 {
@@ -546,8 +539,6 @@ window.MSK_TERMS={
 "lab": "L11 Posterior Leg, Sole, LE Joints",
 "name": "Sole of the foot",
 "terms": [
-"plantar-aponeurosis",
-"superficial-transverse-metatarsal-ligament",
 "abductor-digiti-minimi-foot",
 "flexor-digitorum-brevis-muscle",
 "abductor-hallucis-muscle",
@@ -564,8 +555,7 @@ window.MSK_TERMS={
 "dorsal-interossei-foot",
 "flexor-digiti-minimi-brevis-foot",
 "flexor-hallucis-brevis-muscle",
-"deep-plantar-arch",
-"plantar-metatarsal-arteries"
+"deep-plantar-arch"
 ]
 },
 {
@@ -2785,14 +2775,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "lateral-tarsal-artery",
-"name": "Lateral tarsal artery",
-"aliases": [],
-"sections": [
-"l09-anterior-leg-and-dorsum-of-foot"
-]
-},
-{
 "id": "arcuate-artery",
 "name": "Arcuate artery",
 "aliases": [],
@@ -3001,22 +2983,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "internal-pudendal-artery",
-"name": "Internal pudendal artery",
-"aliases": [],
-"sections": [
-"l10-gluteal-region"
-]
-},
-{
-"id": "internal-pudendal-vein",
-"name": "Internal pudendal vein",
-"aliases": [],
-"sections": [
-"l10-gluteal-region"
-]
-},
-{
 "id": "pudendal-nerve",
 "name": "Pudendal nerve",
 "aliases": [],
@@ -3159,16 +3125,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "triceps-surae-muscle",
-"name": "Triceps surae muscle",
-"aliases": [
-"triceps surae"
-],
-"sections": [
-"l11-posterior-leg"
-]
-},
-{
 "id": "soleus-muscle",
 "name": "Soleus muscle",
 "aliases": [],
@@ -3229,55 +3185,6 @@ window.MSK_TERMS={
 ],
 "sections": [
 "l11-posterior-leg"
-]
-},
-{
-"id": "flexor-retinaculum-foot",
-"name": "Flexor retinaculum of ankle",
-"aliases": [
-"flexor retinaculum",
-"laciniate ligament"
-],
-"sections": [
-"l11-posterior-leg"
-]
-},
-{
-"id": "posterior-tibial-vein",
-"name": "Posterior tibial vein",
-"aliases": [
-"posterior tibial veins"
-],
-"sections": [
-"l11-posterior-leg"
-]
-},
-{
-"id": "sustentaculum-tali",
-"name": "Sustentaculum tali",
-"aliases": [],
-"sections": [
-"l11-posterior-leg"
-]
-},
-{
-"id": "plantar-aponeurosis",
-"name": "Plantar aponeurosis",
-"aliases": [
-"plantar fascia"
-],
-"sections": [
-"l11-sole-of-the-foot"
-]
-},
-{
-"id": "superficial-transverse-metatarsal-ligament",
-"name": "Superficial transverse metatarsal ligament",
-"aliases": [
-"superficial transverse metacarpal ligament"
-],
-"sections": [
-"l11-sole-of-the-foot"
 ]
 },
 {
@@ -3425,16 +3332,6 @@ window.MSK_TERMS={
 "name": "Deep plantar arch",
 "aliases": [
 "plantar arch"
-],
-"sections": [
-"l11-sole-of-the-foot"
-]
-},
-{
-"id": "plantar-metatarsal-arteries",
-"name": "Plantar metatarsal arteries",
-"aliases": [
-"plantar metatarsal artery"
 ],
 "sections": [
 "l11-sole-of-the-foot"
