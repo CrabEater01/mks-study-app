@@ -34,7 +34,6 @@ window.MSK_TERMS={
 "lab": "L01 Superficial Back",
 "name": "Surface anatomy",
 "terms": [
-"external-occipital-protuberance",
 "vertebra-prominens-c7",
 "scapular-spine",
 "acromion",
@@ -82,8 +81,6 @@ window.MSK_TERMS={
 "iliocostalis-muscle",
 "longissimus-muscle",
 "spinalis-muscle",
-"rotatores-muscle",
-"levatores-costarum-muscle",
 "multifidus-muscle"
 ]
 },
@@ -113,14 +110,10 @@ window.MSK_TERMS={
 "ligamentum-flavum",
 "dura-mater",
 "dural-sac",
-"epidural-space",
-"epidural-fat-and-posterior-internal-vertebral-venous-plexus",
 "dorsal-root-ganglion",
 "arachnoid-mater",
 "subarachnoid-space",
 "pia-mater",
-"cervical-enlargement",
-"lumbar-enlargement",
 "conus-medullaris",
 "cauda-equina",
 "denticulate-ligaments",
@@ -129,8 +122,6 @@ window.MSK_TERMS={
 "anterior-roots",
 "spinal-nerves",
 "dorsal-root-ganglion",
-"anterior-ramus-of-spinal-nerve",
-"posterior-ramus-of-spinal-nerve",
 "posterior-longitudinal-ligament"
 ]
 },
@@ -140,15 +131,10 @@ window.MSK_TERMS={
 "name": "Osteology",
 "terms": [
 "scapular-spine",
-"scapular-notch",
 "acromion",
 "coracoid-process",
-"supraglenoid-tubercle",
-"glenoid-fossa",
-"head-of-humerus",
 "greater-tubercle",
-"lesser-tubercle",
-"intertubercular-groove"
+"lesser-tubercle"
 ]
 },
 {
@@ -165,12 +151,10 @@ window.MSK_TERMS={
 "supraspinatus-muscle",
 "subscapularis-muscle",
 "suprascapular-artery",
-"superior-transverse-scapular-ligament",
 "suprascapular-nerve",
 "quadrangular-space",
 "axillary-nerve",
 "posterior-humeral-circumflex-artery",
-"triceps-hiatus",
 "profunda-brachii-artery",
 "radial-nerve",
 "triangular-space",
@@ -185,13 +169,11 @@ window.MSK_TERMS={
 "cephalic-vein",
 "basilic-vein",
 "median-cubital-vein",
-"sternal-angle",
 "pectoralis-major-muscle",
 "pectoralis-minor-muscle",
 "medial-pectoral-nerve",
 "lateral-pectoral-nerve",
 "pectoral-branch-of-thoracoacromial-artery",
-"axillary-vein",
 "axillary-artery",
 "thoracoacromial-artery",
 "lateral-thoracic-artery",
@@ -206,8 +188,6 @@ window.MSK_TERMS={
 "terms": [
 "areola",
 "nipple",
-"areolar-glands",
-"suspensory-ligaments",
 "glandular-tissue",
 "lactiferous-ducts",
 "lactiferous-sinus"
@@ -218,7 +198,6 @@ window.MSK_TERMS={
 "lab": "L04 Axilla & Brachial Plexus",
 "name": "Axilla and brachial plexus",
 "terms": [
-"axillary-vein",
 "brachial-plexus",
 "dorsal-scapular-nerve",
 "suprascapular-nerve",
@@ -357,7 +336,6 @@ window.MSK_TERMS={
 "lateral-head-of-triceps-brachii",
 "long-head-of-triceps-brachii",
 "medial-head-of-triceps-brachii",
-"triceps-hiatus",
 "profunda-brachii-artery",
 "radial-nerve",
 "anconeus-muscle"
@@ -397,7 +375,6 @@ window.MSK_TERMS={
 "name": "Glenohumeral joint",
 "terms": [
 "glenohumeral-joint",
-"supraglenoid-tubercle",
 "coracoacromial-ligament"
 ]
 },
@@ -799,16 +776,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "external-occipital-protuberance",
-"name": "External occipital protuberance",
-"aliases": [
-"inion"
-],
-"sections": [
-"l01-surface-anatomy"
-]
-},
-{
 "id": "vertebra-prominens-c7",
 "name": "Vertebra prominens (C7)",
 "aliases": [
@@ -1043,27 +1010,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "rotatores-muscle",
-"name": "Rotatores muscle",
-"aliases": [
-"rotatores",
-"rotator muscles"
-],
-"sections": [
-"l02-deep-back"
-]
-},
-{
-"id": "levatores-costarum-muscle",
-"name": "Levatores costarum muscle",
-"aliases": [
-"levatores costarum"
-],
-"sections": [
-"l02-deep-back"
-]
-},
-{
 "id": "multifidus-muscle",
 "name": "Multifidus muscle",
 "aliases": [],
@@ -1196,28 +1142,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "epidural-space",
-"name": "Epidural space",
-"aliases": [
-"extradural space"
-],
-"sections": [
-"l02-laminectomy-spinal-cord"
-]
-},
-{
-"id": "epidural-fat-and-posterior-internal-vertebral-venous-plexus",
-"name": "Epidural fat and posterior internal vertebral venous plexus",
-"aliases": [
-"epidural fat",
-"internal vertebral venous plexus",
-"posterior internal vertebral venous plexus"
-],
-"sections": [
-"l02-laminectomy-spinal-cord"
-]
-},
-{
 "id": "dorsal-root-ganglion",
 "name": "Spinal ganglia",
 "aliases": [
@@ -1252,24 +1176,6 @@ window.MSK_TERMS={
 "name": "Pia mater",
 "aliases": [
 "pia"
-],
-"sections": [
-"l02-laminectomy-spinal-cord"
-]
-},
-{
-"id": "cervical-enlargement",
-"name": "Cervical enlargement",
-"aliases": [],
-"sections": [
-"l02-laminectomy-spinal-cord"
-]
-},
-{
-"id": "lumbar-enlargement",
-"name": "Lumbar enlargement",
-"aliases": [
-"lumbosacral enlargement"
 ],
 "sections": [
 "l02-laminectomy-spinal-cord"
@@ -1344,28 +1250,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "anterior-ramus-of-spinal-nerve",
-"name": "Anterior ramus of spinal nerve",
-"aliases": [
-"anterior ramus",
-"ventral ramus"
-],
-"sections": [
-"l02-laminectomy-spinal-cord"
-]
-},
-{
-"id": "posterior-ramus-of-spinal-nerve",
-"name": "Posterior ramus of spinal nerve",
-"aliases": [
-"posterior ramus",
-"dorsal ramus"
-],
-"sections": [
-"l02-laminectomy-spinal-cord"
-]
-},
-{
 "id": "posterior-longitudinal-ligament",
 "name": "Posterior longitudinal ligament",
 "aliases": [],
@@ -1374,48 +1258,9 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "scapular-notch",
-"name": "Scapular notch",
-"aliases": [
-"suprascapular notch"
-],
-"sections": [
-"l03-osteology"
-]
-},
-{
 "id": "coracoid-process",
 "name": "Coracoid process",
 "aliases": [],
-"sections": [
-"l03-osteology"
-]
-},
-{
-"id": "supraglenoid-tubercle",
-"name": "Supraglenoid tubercle",
-"aliases": [],
-"sections": [
-"l03-osteology",
-"l07-glenohumeral-joint"
-]
-},
-{
-"id": "glenoid-fossa",
-"name": "Glenoid fossa",
-"aliases": [
-"glenoid cavity"
-],
-"sections": [
-"l03-osteology"
-]
-},
-{
-"id": "head-of-humerus",
-"name": "Head of humerus",
-"aliases": [
-"humeral head"
-],
 "sections": [
 "l03-osteology"
 ]
@@ -1435,18 +1280,6 @@ window.MSK_TERMS={
 "name": "Lesser tubercle",
 "aliases": [
 "lesser tubercle of humerus"
-],
-"sections": [
-"l03-osteology"
-]
-},
-{
-"id": "intertubercular-groove",
-"name": "Intertubercular groove",
-"aliases": [
-"bicipital groove",
-"intertubercular sulcus",
-"bicipital sulcus"
 ],
 "sections": [
 "l03-osteology"
@@ -1522,17 +1355,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "superior-transverse-scapular-ligament",
-"name": "Superior transverse scapular ligament",
-"aliases": [
-"suprascapular ligament",
-"transverse scapular ligament"
-],
-"sections": [
-"l03-scapular"
-]
-},
-{
 "id": "suprascapular-nerve",
 "name": "Suprascapular nerve",
 "aliases": [],
@@ -1569,18 +1391,6 @@ window.MSK_TERMS={
 "sections": [
 "l03-scapular",
 "l04-axilla-and-brachial-plexus"
-]
-},
-{
-"id": "triceps-hiatus",
-"name": "Triceps hiatus",
-"aliases": [
-"triangular interval",
-"lower triangular space"
-],
-"sections": [
-"l03-scapular",
-"l07-posterior-arm"
 ]
 },
 {
@@ -1653,16 +1463,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "sternal-angle",
-"name": "Sternal angle",
-"aliases": [
-"angle of Louis"
-],
-"sections": [
-"l03-pectoral"
-]
-},
-{
 "id": "pectoralis-major-muscle",
 "name": "Pectoralis major muscle",
 "aliases": [],
@@ -1703,15 +1503,6 @@ window.MSK_TERMS={
 "pectoral artery",
 "pectoral branch"
 ],
-"sections": [
-"l03-pectoral",
-"l04-axilla-and-brachial-plexus"
-]
-},
-{
-"id": "axillary-vein",
-"name": "Axillary vein",
-"aliases": [],
 "sections": [
 "l03-pectoral",
 "l04-axilla-and-brachial-plexus"
@@ -1776,29 +1567,6 @@ window.MSK_TERMS={
 "id": "nipple",
 "name": "Nipple",
 "aliases": [],
-"sections": [
-"l03-female-breast"
-]
-},
-{
-"id": "areolar-glands",
-"name": "Areolar glands",
-"aliases": [
-"glands of Montgomery",
-"Montgomery glands"
-],
-"sections": [
-"l03-female-breast"
-]
-},
-{
-"id": "suspensory-ligaments",
-"name": "Suspensory ligaments",
-"aliases": [
-"suspensory ligaments of Cooper",
-"Cooper's ligaments",
-"suspensory ligament"
-],
 "sections": [
 "l03-female-breast"
 ]

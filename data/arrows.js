@@ -1017,15 +1017,6 @@ window.MSK_ARROWS=[
 "note": ""
 },
 {
-"id": "flexor-pollicis-longus-muscle@Gray415",
-"term": "flexor-pollicis-longus-muscle",
-"img": "Gray415",
-"x": 0.5521,
-"y": 0.4037,
-"a": 0,
-"note": ""
-},
-{
 "id": "supinator-muscle@Gray415",
 "term": "supinator-muscle",
 "img": "Gray415",
@@ -1125,15 +1116,6 @@ window.MSK_ARROWS=[
 "note": ""
 },
 {
-"id": "anconeus-muscle@Gray418",
-"term": "anconeus-muscle",
-"img": "Gray418",
-"x": 0.7292,
-"y": 0.2215,
-"a": 0,
-"note": ""
-},
-{
 "id": "abductor-pollicis-longus-muscle@Gray418",
 "term": "abductor-pollicis-longus-muscle",
 "img": "Gray418",
@@ -1166,15 +1148,6 @@ window.MSK_ARROWS=[
 "img": "Gray418",
 "x": 0.5469,
 "y": 0.7669,
-"a": 0,
-"note": ""
-},
-{
-"id": "anconeus-muscle@Gray419",
-"term": "anconeus-muscle",
-"img": "Gray419",
-"x": 0.599,
-"y": 0.2284,
 "a": 0,
 "note": ""
 },
@@ -1292,15 +1265,6 @@ window.MSK_ARROWS=[
 "img": "Gray528",
 "x": 0.3042,
 "y": 0.2882,
-"a": 180,
-"note": ""
-},
-{
-"id": "flexor-pollicis-longus-muscle@Gray528",
-"term": "flexor-pollicis-longus-muscle",
-"img": "Gray528",
-"x": 0.4292,
-"y": 0.5187,
 "a": 180,
 "note": ""
 },
@@ -3894,6 +3858,123 @@ window.MSK_ARROWS=[
 "x": 0.6002,
 "y": 0.6253,
 "a": 0,
+"note": ""
+},
+{
+"id": "accessory-nerve-cn-xi@user_accessory-nerve-cn-xi",
+"term": "accessory-nerve-cn-xi",
+"img": "user_accessory-nerve-cn-xi",
+"x": 0.6729,
+"y": 0.4801,
+"a": 180,
+"note": ""
+},
+{
+"id": "anconeus-muscle@user_anconeus-muscle",
+"term": "anconeus-muscle",
+"img": "user_anconeus-muscle",
+"x": 0.6294,
+"y": 0.4697,
+"a": 180,
+"note": ""
+},
+{
+"id": "flexor-pollicis-longus-muscle@user_flexor-pollicus-longus-muscle",
+"term": "flexor-pollicis-longus-muscle",
+"img": "user_flexor-pollicus-longus-muscle",
+"x": 0.4392,
+"y": 0.3298,
+"a": 0,
+"note": ""
+},
+{
+"id": "inferior-angle-of-scapula@user_inferior-angle-of-the-scapula",
+"term": "inferior-angle-of-scapula",
+"img": "user_inferior-angle-of-the-scapula",
+"x": 0.7797,
+"y": 0.8595,
+"a": 45,
+"note": ""
+},
+{
+"id": "lateral-thoracic-artery@user_lateral-thoracic-artery",
+"term": "lateral-thoracic-artery",
+"img": "user_lateral-thoracic-artery",
+"x": 0.59,
+"y": 0.6339,
+"a": 330,
+"note": ""
+},
+{
+"id": "pectoral-branch-of-thoracoacromial-artery@user_pectoral-branch-of-the-thoracoacromical-artery",
+"term": "pectoral-branch-of-thoracoacromial-artery",
+"img": "user_pectoral-branch-of-the-thoracoacromical-artery",
+"x": 0.5398,
+"y": 0.5692,
+"a": 0,
+"note": ""
+},
+{
+"id": "pectoralis-minor-muscle@user_pectoralis-minor-muscle",
+"term": "pectoralis-minor-muscle",
+"img": "user_pectoralis-minor-muscle",
+"x": 0.4202,
+"y": 0.4629,
+"a": 180,
+"note": ""
+},
+{
+"id": "posterior-longitudinal-ligament@user_posterior-longitudinal-ligament",
+"term": "posterior-longitudinal-ligament",
+"img": "user_posterior-longitudinal-ligament",
+"x": 0.5905,
+"y": 0.3743,
+"a": 270,
+"note": ""
+},
+{
+"id": "posterior-superior-iliac-spine@user_posterior-superior-iliac-spine",
+"term": "posterior-superior-iliac-spine",
+"img": "user_posterior-superior-iliac-spine",
+"x": 0.3349,
+"y": 0.2433,
+"a": 270,
+"note": ""
+},
+{
+"id": "serratus-posterior-superior-muscle@user_serratus-posterior-superior-muscle",
+"term": "serratus-posterior-superior-muscle",
+"img": "user_serratus-posterior-superior-muscle",
+"x": 0.5897,
+"y": 0.3763,
+"a": 330,
+"note": ""
+},
+{
+"id": "splenius-cervicis-muscle@user_splenius-cervicis",
+"term": "splenius-cervicis-muscle",
+"img": "user_splenius-cervicis",
+"x": 0.6951,
+"y": 0.6005,
+"a": 180,
+"note": ""
+},
+{
+"id": "subscapularis-muscle@user_subscapularis-muscle",
+"term": "subscapularis-muscle",
+"img": "user_subscapularis-muscle",
+"x": 0.5705,
+"y": 0.5805,
+"a": 0,
+"note": ""
+},
+{
+"id": "triangle-of-auscultation@user_triangle-of-auscultation",
+"term": "triangle-of-auscultation",
+"img": "user_triangle-of-auscultation",
+"x": 0.4299,
+"y": 0.5099,
+"a": 300,
 "note": ""
 }
 ];

@@ -678,5 +678,135 @@ window.MSK_IMAGES={
 "author": "Supplied by Samuel",
 "license": "Personal study use",
 "source": ""
+},
+"user_accessory-nerve-cn-xi": {
+"clean": "images/user_accessory-nerve-cn-xi.jpg",
+"labeled": "images/user_accessory-nerve-cn-xi.jpg",
+"w": 1351,
+"h": 1400,
+"title": "Accessory nerve (CN XI).png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_anconeus-muscle": {
+"clean": "images/user_anconeus-muscle.jpg",
+"labeled": "images/user_anconeus-muscle.jpg",
+"w": 715,
+"h": 1400,
+"title": "Anconeus muscle.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_flexor-pollicus-longus-muscle": {
+"clean": "images/user_flexor-pollicus-longus-muscle.jpg",
+"labeled": "images/user_flexor-pollicus-longus-muscle.jpg",
+"w": 1051,
+"h": 1400,
+"title": "Flexor pollicus longus muscle.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_inferior-angle-of-the-scapula": {
+"clean": "images/user_inferior-angle-of-the-scapula.jpg",
+"labeled": "images/user_inferior-angle-of-the-scapula.jpg",
+"w": 740,
+"h": 790,
+"title": "Inferior angle of the scapula.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_lateral-thoracic-artery": {
+"clean": "images/user_lateral-thoracic-artery.jpg",
+"labeled": "images/user_lateral-thoracic-artery.jpg",
+"w": 1266,
+"h": 1158,
+"title": "Lateral thoracic artery.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_pectoral-branch-of-the-thoracoacromical-artery": {
+"clean": "images/user_pectoral-branch-of-the-thoracoacromical-artery.jpg",
+"labeled": "images/user_pectoral-branch-of-the-thoracoacromical-artery.jpg",
+"w": 1330,
+"h": 1214,
+"title": "Pectoral branch of the thoracoacromical artery.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_pectoralis-minor-muscle": {
+"clean": "images/user_pectoralis-minor-muscle.jpg",
+"labeled": "images/user_pectoralis-minor-muscle.jpg",
+"w": 1040,
+"h": 944,
+"title": "Pectoralis minor muscle.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_posterior-longitudinal-ligament": {
+"clean": "images/user_posterior-longitudinal-ligament.jpg",
+"labeled": "images/user_posterior-longitudinal-ligament.jpg",
+"w": 608,
+"h": 764,
+"title": "posterior longitudinal ligament.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_posterior-superior-iliac-spine": {
+"clean": "images/user_posterior-superior-iliac-spine.jpg",
+"labeled": "images/user_posterior-superior-iliac-spine.jpg",
+"w": 836,
+"h": 600,
+"title": "Posterior superior iliac spine.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_serratus-posterior-superior-muscle": {
+"clean": "images/user_serratus-posterior-superior-muscle.jpg",
+"labeled": "images/user_serratus-posterior-superior-muscle.jpg",
+"w": 1316,
+"h": 1188,
+"title": "serratus posterior superior muscle.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_splenius-cervicis": {
+"clean": "images/user_splenius-cervicis.jpg",
+"labeled": "images/user_splenius-cervicis.jpg",
+"w": 692,
+"h": 766,
+"title": "Splenius cervicis.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_subscapularis-muscle": {
+"clean": "images/user_subscapularis-muscle.jpg",
+"labeled": "images/user_subscapularis-muscle.jpg",
+"w": 1064,
+"h": 1168,
+"title": "Subscapularis muscle.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_triangle-of-auscultation": {
+"clean": "images/user_triangle-of-auscultation.jpg",
+"labeled": "images/user_triangle-of-auscultation.jpg",
+"w": 942,
+"h": 906,
+"title": "Triangle of auscultation.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
 }
 };
