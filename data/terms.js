@@ -221,9 +221,7 @@ window.MSK_TERMS={
 "superior-thoracic-artery",
 "thoracoacromial-artery",
 "pectoral-branch-of-thoracoacromial-artery",
-"deltoid-branch-of-thoracoacromial-artery",
 "acromial-branch-of-thoracoacromial-artery",
-"clavicular-branch-of-thoracoacromial-artery",
 "lateral-thoracic-artery",
 "anterior-humeral-circumflex-artery",
 "posterior-humeral-circumflex-artery",
@@ -268,11 +266,7 @@ window.MSK_TERMS={
 "lab": "L05 Anterior Arm & Forearm",
 "name": "Forearm",
 "terms": [
-"palmar-aponeurosis",
 "palmaris-longus-tendon",
-"flexor-retinaculum-hand",
-"antebrachial-fascia",
-"extensor-retinaculum-hand",
 "pronator-teres-muscle",
 "flexor-carpi-radialis-muscle",
 "palmaris-longus-muscle",
@@ -283,7 +277,6 @@ window.MSK_TERMS={
 "flexor-digitorum-profundus-muscle",
 "pronator-quadratus-muscle",
 "ulnar-artery",
-"common-interosseous-artery",
 "anterior-interosseous-artery",
 "posterior-interosseous-artery",
 "ulnar-nerve",
@@ -297,14 +290,11 @@ window.MSK_TERMS={
 "lab": "L06 Wrist & Hand",
 "name": "Wrist and hand",
 "terms": [
-"palmar-aponeurosis",
 "palmaris-longus-tendon",
 "palmaris-brevis-muscle",
-"thenar-eminence",
 "flexor-pollicis-brevis-muscle",
 "abductor-pollicis-brevis-muscle",
 "opponens-pollicis-muscle",
-"hypothenar-eminence",
 "abductor-digiti-minimi-hand",
 "flexor-digiti-minimi-brevis-hand",
 "opponens-digiti-minimi-muscle",
@@ -318,8 +308,6 @@ window.MSK_TERMS={
 "fibrous-digital-sheath",
 "flexor-digitorum-superficialis-tendon",
 "flexor-digitorum-profundus-tendon",
-"flexor-retinaculum-hand",
-"flexor-pollicis-longus-tendon",
 "adductor-pollicis-muscle",
 "oblique-head-of-adductor-pollicis",
 "transverse-head-of-adductor-pollicis",
@@ -1737,30 +1725,10 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "deltoid-branch-of-thoracoacromial-artery",
-"name": "Deltoid branch of thoracoacromial artery",
-"aliases": [
-"deltoid branch"
-],
-"sections": [
-"l04-axilla-and-brachial-plexus"
-]
-},
-{
 "id": "acromial-branch-of-thoracoacromial-artery",
 "name": "Acromial branch of thoracoacromial artery",
 "aliases": [
 "acromial branch"
-],
-"sections": [
-"l04-axilla-and-brachial-plexus"
-]
-},
-{
-"id": "clavicular-branch-of-thoracoacromial-artery",
-"name": "Clavicular branch of thoracoacromial artery",
-"aliases": [
-"clavicular branch"
 ],
 "sections": [
 "l04-axilla-and-brachial-plexus"
@@ -1937,15 +1905,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "palmar-aponeurosis",
-"name": "Palmar aponeurosis",
-"aliases": [],
-"sections": [
-"l05-forearm",
-"l06-wrist-and-hand"
-]
-},
-{
 "id": "palmaris-longus-tendon",
 "name": "Palmaris longus tendon",
 "aliases": [
@@ -1954,38 +1913,6 @@ window.MSK_TERMS={
 "sections": [
 "l05-forearm",
 "l06-wrist-and-hand"
-]
-},
-{
-"id": "flexor-retinaculum-hand",
-"name": "Flexor retinaculum of wrist",
-"aliases": [
-"flexor retinaculum",
-"transverse carpal ligament"
-],
-"sections": [
-"l05-forearm",
-"l06-wrist-and-hand"
-]
-},
-{
-"id": "antebrachial-fascia",
-"name": "Antebrachial fascia",
-"aliases": [
-"deep fascia of forearm"
-],
-"sections": [
-"l05-forearm"
-]
-},
-{
-"id": "extensor-retinaculum-hand",
-"name": "Extensor retinaculum of wrist",
-"aliases": [
-"extensor retinaculum"
-],
-"sections": [
-"l05-forearm"
 ]
 },
 {
@@ -2047,14 +1974,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "common-interosseous-artery",
-"name": "Common interosseous artery",
-"aliases": [],
-"sections": [
-"l05-forearm"
-]
-},
-{
 "id": "anterior-interosseous-artery",
 "name": "Anterior interosseous artery",
 "aliases": [],
@@ -2100,16 +2019,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "thenar-eminence",
-"name": "Thenar eminence",
-"aliases": [
-"thenar muscles"
-],
-"sections": [
-"l06-wrist-and-hand"
-]
-},
-{
 "id": "flexor-pollicis-brevis-muscle",
 "name": "Flexor pollicis brevis muscle",
 "aliases": [],
@@ -2129,16 +2038,6 @@ window.MSK_TERMS={
 "id": "opponens-pollicis-muscle",
 "name": "Opponens pollicis muscle",
 "aliases": [],
-"sections": [
-"l06-wrist-and-hand"
-]
-},
-{
-"id": "hypothenar-eminence",
-"name": "Hypothenar eminence",
-"aliases": [
-"hypothenar muscles"
-],
 "sections": [
 "l06-wrist-and-hand"
 ]
@@ -2257,16 +2156,6 @@ window.MSK_TERMS={
 "name": "Flexor digitorum profundus tendon",
 "aliases": [
 "tendon of flexor digitorum profundus"
-],
-"sections": [
-"l06-wrist-and-hand"
-]
-},
-{
-"id": "flexor-pollicis-longus-tendon",
-"name": "Flexor pollicis longus tendon",
-"aliases": [
-"tendon of flexor pollicis longus"
 ],
 "sections": [
 "l06-wrist-and-hand"
