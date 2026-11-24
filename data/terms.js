@@ -278,7 +278,6 @@ window.MSK_TERMS={
 "pronator-quadratus-muscle",
 "ulnar-artery",
 "anterior-interosseous-artery",
-"posterior-interosseous-artery",
 "ulnar-nerve",
 "radial-nerve",
 "superficial-branch-of-radial-nerve",
@@ -345,16 +344,10 @@ window.MSK_TERMS={
 "extensor-pollicis-longus-muscle",
 "extensor-indicis-muscle",
 "supinator-muscle",
-"posterior-interosseous-nerve",
-"posterior-interosseous-artery",
 "radial-artery",
-"anatomic-snuffbox",
-"abductor-pollicis-longus-tendon",
-"extensor-pollicis-brevis-tendon",
 "extensor-pollicis-longus-tendon",
 "dorsal-interossei-hand",
-"extensor-digitorum-tendon",
-"extensor-expansion"
+"extensor-digitorum-tendon"
 ]
 },
 {
@@ -371,7 +364,6 @@ window.MSK_TERMS={
 "lab": "L07 Posterior Arm & Forearm, UE Joints",
 "name": "Elbow and radioulnar joints",
 "terms": [
-"articular-capsule-of-elbow",
 "ulnar-collateral-ligament-elbow",
 "radial-collateral-ligament-elbow",
 "annular-ligament",
@@ -1982,15 +1974,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "posterior-interosseous-artery",
-"name": "Posterior interosseous artery",
-"aliases": [],
-"sections": [
-"l05-forearm",
-"l07-posterior-forearm"
-]
-},
-{
 "id": "superficial-branch-of-radial-nerve",
 "name": "Superficial branch of radial nerve",
 "aliases": [
@@ -2336,43 +2319,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "posterior-interosseous-nerve",
-"name": "Posterior interosseous nerve",
-"aliases": [
-"deep radial nerve"
-],
-"sections": [
-"l07-posterior-forearm"
-]
-},
-{
-"id": "anatomic-snuffbox",
-"name": "Anatomic snuffbox",
-"aliases": [
-"anatomical snuffbox",
-"snuffbox"
-],
-"sections": [
-"l07-posterior-forearm"
-]
-},
-{
-"id": "abductor-pollicis-longus-tendon",
-"name": "Abductor pollicis longus tendon",
-"aliases": [],
-"sections": [
-"l07-posterior-forearm"
-]
-},
-{
-"id": "extensor-pollicis-brevis-tendon",
-"name": "Extensor pollicis brevis tendon",
-"aliases": [],
-"sections": [
-"l07-posterior-forearm"
-]
-},
-{
 "id": "extensor-pollicis-longus-tendon",
 "name": "Extensor pollicis longus tendon",
 "aliases": [],
@@ -2402,18 +2348,6 @@ window.MSK_TERMS={
 ]
 },
 {
-"id": "extensor-expansion",
-"name": "Extensor expansion",
-"aliases": [
-"dorsal digital expansion",
-"extensor hood",
-"dorsal expansion"
-],
-"sections": [
-"l07-posterior-forearm"
-]
-},
-{
 "id": "glenohumeral-joint",
 "name": "Glenohumeral joint",
 "aliases": [
@@ -2429,18 +2363,6 @@ window.MSK_TERMS={
 "aliases": [],
 "sections": [
 "l07-glenohumeral-joint"
-]
-},
-{
-"id": "articular-capsule-of-elbow",
-"name": "Articular capsule of elbow",
-"aliases": [
-"articular capsule",
-"joint capsule",
-"elbow joint capsule"
-],
-"sections": [
-"l07-elbow-and-radioulnar-joints"
 ]
 },
 {
