@@ -1107,15 +1107,6 @@ window.MSK_ARROWS=[
 "note": ""
 },
 {
-"id": "extensor-pollicis-brevis-muscle@Gray418",
-"term": "extensor-pollicis-brevis-muscle",
-"img": "Gray418",
-"x": 0.4219,
-"y": 0.576,
-"a": 180,
-"note": ""
-},
-{
 "id": "extensor-pollicis-longus-tendon@Gray418",
 "term": "extensor-pollicis-longus-tendon",
 "img": "Gray418",
@@ -1158,15 +1149,6 @@ window.MSK_ARROWS=[
 "x": 0.4583,
 "y": 0.5057,
 "a": 0,
-"note": ""
-},
-{
-"id": "extensor-pollicis-brevis-muscle@Gray419",
-"term": "extensor-pollicis-brevis-muscle",
-"img": "Gray419",
-"x": 0.375,
-"y": 0.6464,
-"a": 180,
 "note": ""
 },
 {

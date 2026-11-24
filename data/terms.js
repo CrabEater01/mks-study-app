@@ -340,7 +340,6 @@ window.MSK_TERMS={
 "extensor-digiti-minimi-muscle",
 "extensor-carpi-ulnaris-muscle",
 "abductor-pollicis-longus-muscle",
-"extensor-pollicis-brevis-muscle",
 "extensor-pollicis-longus-muscle",
 "extensor-indicis-muscle",
 "supinator-muscle",
@@ -2270,14 +2269,6 @@ window.MSK_TERMS={
 {
 "id": "abductor-pollicis-longus-muscle",
 "name": "Abductor pollicis longus muscle",
-"aliases": [],
-"sections": [
-"l07-posterior-forearm"
-]
-},
-{
-"id": "extensor-pollicis-brevis-muscle",
-"name": "Extensor pollicis brevis muscle",
 "aliases": [],
 "sections": [
 "l07-posterior-forearm"
