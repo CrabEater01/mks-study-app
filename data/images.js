@@ -568,5 +568,95 @@ window.MSK_IMAGES={
 "author": "Henry Vandyke Carter / Henry Gray",
 "license": "Public domain",
 "source": "https://commons.wikimedia.org/wiki/File:Gray582.png"
+},
+"user_dorsal-interossei-muscle": {
+"clean": "images/user_dorsal-interossei-muscle.jpg",
+"labeled": "images/user_dorsal-interossei-muscle.jpg",
+"w": 1331,
+"h": 1400,
+"title": "Dorsal interossei muscle.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_dorsal-scapular-nerve": {
+"clean": "images/user_dorsal-scapular-nerve.jpg",
+"labeled": "images/user_dorsal-scapular-nerve.jpg",
+"w": 1400,
+"h": 1006,
+"title": "Dorsal scapular nerve.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_extensor-carpi-radialis-longus": {
+"clean": "images/user_extensor-carpi-radialis-longus.jpg",
+"labeled": "images/user_extensor-carpi-radialis-longus.jpg",
+"w": 983,
+"h": 1400,
+"title": "Extensor carpi radialis longus.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_flexor-digiti-minimi-brevis": {
+"clean": "images/user_flexor-digiti-minimi-brevis.jpg",
+"labeled": "images/user_flexor-digiti-minimi-brevis.jpg",
+"w": 743,
+"h": 1400,
+"title": "Flexor digiti minimi brevis.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_greater-occipital-nerve": {
+"clean": "images/user_greater-occipital-nerve.jpg",
+"labeled": "images/user_greater-occipital-nerve.jpg",
+"w": 1259,
+"h": 1400,
+"title": "Greater occipital nerve.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_multifidus-muscle": {
+"clean": "images/user_multifidus-muscle.jpg",
+"labeled": "images/user_multifidus-muscle.jpg",
+"w": 1088,
+"h": 1366,
+"title": "Multifidus muscle.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_quadratus-plantae-muscle": {
+"clean": "images/user_quadratus-plantae-muscle.jpg",
+"labeled": "images/user_quadratus-plantae-muscle.jpg",
+"w": 1400,
+"h": 1276,
+"title": "Quadratus plantae muscle.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_sartorius-muscle": {
+"clean": "images/user_sartorius-muscle.jpg",
+"labeled": "images/user_sartorius-muscle.jpg",
+"w": 1400,
+"h": 1355,
+"title": "Sartorius muscle.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
+},
+"user_sciatic-nerve": {
+"clean": "images/user_sciatic-nerve.jpg",
+"labeled": "images/user_sciatic-nerve.jpg",
+"w": 928,
+"h": 818,
+"title": "Sciatic nerve.png (added by Samuel)",
+"author": "Supplied by Samuel",
+"license": "Personal study use",
+"source": ""
 }
 };

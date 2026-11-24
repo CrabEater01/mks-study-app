@@ -828,15 +828,6 @@ window.MSK_ARROWS=[
 "note": ""
 },
 {
-"id": "dorsal-scapular-nerve@Gray808",
-"term": "dorsal-scapular-nerve",
-"img": "Gray808",
-"x": 0.6229,
-"y": 0.1258,
-"a": 180,
-"note": "Labeled \"dorsalis scapulae\" in Gray's"
-},
-{
 "id": "suprascapular-nerve@Gray808",
 "term": "suprascapular-nerve",
 "img": "Gray808",
@@ -1107,15 +1098,6 @@ window.MSK_ARROWS=[
 "note": ""
 },
 {
-"id": "extensor-carpi-radialis-longus-muscle@Gray418",
-"term": "extensor-carpi-radialis-longus-muscle",
-"img": "Gray418",
-"x": 0.4479,
-"y": 0.2181,
-"a": 180,
-"note": ""
-},
-{
 "id": "extensor-carpi-radialis-brevis-muscle@Gray418",
 "term": "extensor-carpi-radialis-brevis-muscle",
 "img": "Gray418",
@@ -1197,15 +1179,6 @@ window.MSK_ARROWS=[
 "note": ""
 },
 {
-"id": "dorsal-interossei-hand@Gray418",
-"term": "dorsal-interossei-hand",
-"img": "Gray418",
-"x": 0.2188,
-"y": 0.743,
-"a": 180,
-"note": "First dorsal interosseous"
-},
-{
 "id": "anconeus-muscle@Gray419",
 "term": "anconeus-muscle",
 "img": "Gray419",
@@ -1274,15 +1247,6 @@ window.MSK_ARROWS=[
 "img": "Gray419",
 "x": 0.524,
 "y": 0.6872,
-"a": 0,
-"note": ""
-},
-{
-"id": "dorsal-interossei-hand@Gray419",
-"term": "dorsal-interossei-hand",
-"img": "Gray419",
-"x": 0.4896,
-"y": 0.8462,
 "a": 0,
 "note": ""
 },
@@ -1944,15 +1908,6 @@ window.MSK_ARROWS=[
 "note": ""
 },
 {
-"id": "greater-occipital-nerve@Gray800",
-"term": "greater-occipital-nerve",
-"img": "Gray800",
-"x": 0.526,
-"y": 0.2455,
-"a": 270,
-"note": ""
-},
-{
 "id": "suboccipital-nerve@Gray800",
 "term": "suboccipital-nerve",
 "img": "Gray800",
@@ -2205,15 +2160,6 @@ window.MSK_ARROWS=[
 "note": ""
 },
 {
-"id": "sartorius-muscle@Gray430",
-"term": "sartorius-muscle",
-"img": "Gray430",
-"x": 0.4323,
-"y": 0.486,
-"a": 180,
-"note": ""
-},
-{
 "id": "pectineus-muscle@Gray430",
 "term": "pectineus-muscle",
 "img": "Gray430",
@@ -2418,15 +2364,6 @@ window.MSK_ARROWS=[
 "x": 0.474,
 "y": 0.7567,
 "a": 0,
-"note": ""
-},
-{
-"id": "sartorius-muscle@Gray545",
-"term": "sartorius-muscle",
-"img": "Gray545",
-"x": 0.2812,
-"y": 0.6689,
-"a": 180,
 "note": ""
 },
 {
@@ -3024,15 +2961,6 @@ window.MSK_ARROWS=[
 "note": ""
 },
 {
-"id": "quadratus-plantae-muscle@Gray833",
-"term": "quadratus-plantae-muscle",
-"img": "Gray833",
-"x": 0.4635,
-"y": 0.2406,
-"a": 300,
-"note": ""
-},
-{
 "id": "flexor-digitorum-longus-tendons@Gray833",
 "term": "flexor-digitorum-longus-tendons",
 "img": "Gray833",
@@ -3201,15 +3129,6 @@ window.MSK_ARROWS=[
 "x": 0.7135,
 "y": 0.4584,
 "a": 30,
-"note": ""
-},
-{
-"id": "dorsal-scapular-nerve@Gray807",
-"term": "dorsal-scapular-nerve",
-"img": "Gray807",
-"x": 0.6635,
-"y": 0.1528,
-"a": 200,
 "note": ""
 },
 {
@@ -3690,24 +3609,6 @@ window.MSK_ARROWS=[
 "note": ""
 },
 {
-"id": "multifidus-muscle@Gray389",
-"term": "multifidus-muscle",
-"img": "Gray389",
-"x": 0.5573,
-"y": 0.8945,
-"a": 0,
-"note": ""
-},
-{
-"id": "sciatic-nerve@Gray832",
-"term": "sciatic-nerve",
-"img": "Gray832",
-"x": 0.6333,
-"y": 0.2508,
-"a": 0,
-"note": ""
-},
-{
 "id": "superior-gluteal-nerve@Gray832",
 "term": "superior-gluteal-nerve",
 "img": "Gray832",
@@ -3762,30 +3663,12 @@ window.MSK_ARROWS=[
 "note": "Please check: emerging above piriformis"
 },
 {
-"id": "sciatic-nerve@Gray544",
-"term": "sciatic-nerve",
-"img": "Gray544",
-"x": 0.4375,
-"y": 0.3314,
-"a": 0,
-"note": ""
-},
-{
 "id": "popliteal-artery@Gray544",
 "term": "popliteal-artery",
 "img": "Gray544",
 "x": 0.324,
 "y": 0.8886,
 "a": 180,
-"note": ""
-},
-{
-"id": "quadratus-plantae-muscle@Gray444",
-"term": "quadratus-plantae-muscle",
-"img": "Gray444",
-"x": 0.5417,
-"y": 0.4297,
-"a": 0,
 "note": ""
 },
 {
@@ -3840,15 +3723,6 @@ window.MSK_ARROWS=[
 "x": 0.3125,
 "y": 0.6582,
 "a": 180,
-"note": ""
-},
-{
-"id": "flexor-digiti-minimi-brevis-foot@Gray445",
-"term": "flexor-digiti-minimi-brevis-foot",
-"img": "Gray445",
-"x": 0.8281,
-"y": 0.5642,
-"a": 0,
 "note": ""
 },
 {
@@ -3940,5 +3814,86 @@ window.MSK_ARROWS=[
 "y": 0.0835,
 "a": 0,
 "note": "Please check"
+},
+{
+"id": "dorsal-interossei-hand@user_dorsal-interossei-muscle",
+"term": "dorsal-interossei-hand",
+"img": "user_dorsal-interossei-muscle",
+"x": 0.7187,
+"y": 0.6523,
+"a": 180,
+"note": ""
+},
+{
+"id": "dorsal-scapular-nerve@user_dorsal-scapular-nerve",
+"term": "dorsal-scapular-nerve",
+"img": "user_dorsal-scapular-nerve",
+"x": 0.437,
+"y": 0.5564,
+"a": 180,
+"note": ""
+},
+{
+"id": "extensor-carpi-radialis-longus-muscle@user_extensor-carpi-radialis-longus",
+"term": "extensor-carpi-radialis-longus-muscle",
+"img": "user_extensor-carpi-radialis-longus",
+"x": 0.4983,
+"y": 0.3002,
+"a": 180,
+"note": ""
+},
+{
+"id": "flexor-digiti-minimi-brevis-foot@user_flexor-digiti-minimi-brevis",
+"term": "flexor-digiti-minimi-brevis-foot",
+"img": "user_flexor-digiti-minimi-brevis",
+"x": 0.6863,
+"y": 0.5978,
+"a": 45,
+"note": ""
+},
+{
+"id": "greater-occipital-nerve@user_greater-occipital-nerve",
+"term": "greater-occipital-nerve",
+"img": "user_greater-occipital-nerve",
+"x": 0.5652,
+"y": 0.5,
+"a": 0,
+"note": ""
+},
+{
+"id": "multifidus-muscle@user_multifidus-muscle",
+"term": "multifidus-muscle",
+"img": "user_multifidus-muscle",
+"x": 0.4706,
+"y": 0.6999,
+"a": 180,
+"note": ""
+},
+{
+"id": "quadratus-plantae-muscle@user_quadratus-plantae-muscle",
+"term": "quadratus-plantae-muscle",
+"img": "user_quadratus-plantae-muscle",
+"x": 0.65,
+"y": 0.406,
+"a": 0,
+"note": ""
+},
+{
+"id": "sartorius-muscle@user_sartorius-muscle",
+"term": "sartorius-muscle",
+"img": "user_sartorius-muscle",
+"x": 0.44,
+"y": 0.4652,
+"a": 180,
+"note": ""
+},
+{
+"id": "sciatic-nerve@user_sciatic-nerve",
+"term": "sciatic-nerve",
+"img": "user_sciatic-nerve",
+"x": 0.6897,
+"y": 0.4535,
+"a": 0,
+"note": ""
 }
 ];
