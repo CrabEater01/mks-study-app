@@ -340,7 +340,6 @@ $('#ea-rotl').onclick=()=>editing&&editing.ctl.rotate(-30);
 $('#ea-rotr').onclick=()=>editing&&editing.ctl.rotate(30);
 $('#ea-reset').onclick=()=>{ if(!editing) return; const e=S.arrowEdits[editing.id]; if(e){ delete e.x; delete e.y; delete e.a; delete e.moved; } save(); editing.draw(); $('#ea-msg').textContent='Back to the original position.'; };
 $('#ea-ok').onclick=()=>{ if(!editing) return; const e=S.arrowEdits[editing.id]||(S.arrowEdits[editing.id]={}); e.status='ok'; save(); endEdit(true); flashEdit('✓ Arrow confirmed (counts as reviewed). Press Enter for the next card.'); };
-$('#ea-bad').onclick=()=>{ if(!editing) return; const e=S.arrowEdits[editing.id]||(S.arrowEdits[editing.id]={}); e.status='bad'; save(); endEdit(true); flashEdit('Arrow marked wrong. It won\'t be used in the quiz; you can fix it in Arrow review.'); };
 $('#ea-cancel').onclick=()=>{ if(!editing) return; if(editing.before) S.arrowEdits[editing.id]=editing.before; else delete S.arrowEdits[editing.id]; save(); endEdit(true); };
 function flashEdit(t){ const n=document.createElement('div'); n.className='small'; n.style.marginTop='8px'; n.textContent=t; $('#feedback').appendChild(n); }
 
