@@ -70,6 +70,7 @@ button.bad{background:var(--bad);color:#fff;border:0;border-radius:8px;padding:8
 .term-item{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 10px;cursor:pointer;display:flex;justify-content:space-between;gap:6px}
 .term-item:hover{border-color:var(--accent)}
 .term-item .tag{font-size:11px;padding:1px 6px;border-radius:10px;white-space:nowrap;align-self:flex-start}
+.term-item .tag:not(.missing):not(.done){background:var(--warn-bg);color:var(--warn)}
 .tag.missing{background:var(--bad-bg);color:var(--bad)}
 .tag.done{background:var(--good-bg);color:var(--good)}
 .browse-sec{margin:14px 0 6px;font-weight:700}

@@ -419,21 +419,24 @@ document.addEventListener('keydown',e=>{
 /* ---------------- browse UI ---------------- */
 let bmArr=[], bmIdx=0, bmLab=false;
 function browseRender(){
-  const q=$('#browse-search').value.toLowerCase().trim(), onlyMissing=$('#browse-missing').checked;
+  const q=$('#browse-search').value.toLowerCase().trim(), f=$('#browse-filter').value;
   let html='', count=0, missing=0;
   for(const s of T.sections){
     const items=s.terms.map(id=>termById[id]).filter(t=>{
       const m=!hasImage(t.id); if(m) missing++;
-      if(onlyMissing && !m) return false;
+      if(f==='missing' && !m) return false;
+      if(f==='done' && (m || !mastered(t.id))) return false;
+      if(f==='todo' && (m || mastered(t.id))) return false;
       if(q && !(t.name.toLowerCase().includes(q)||(t.aliases||[]).some(a=>a.toLowerCase().includes(q)))) return false;
       return true;});
     if(!items.length) continue; count+=items.length;
     html+=`<div class="browse-sec">${esc(s.lab)} › ${esc(s.name)}</div><div class="term-grid">`+items.map(t=>{
       const m=!hasImage(t.id);
-      return `<div class="term-item" data-id="${t.id}"><span>${esc(t.name)}</span>${m?'<span class="tag missing">no image</span>':mastered(t.id)?'<span class="tag done">done</span>':''}</div>`;}).join('')+'</div>';
+      return `<div class="term-item" data-id="${t.id}"><span>${esc(t.name)}</span>${m?'<span class="tag missing">no image</span>':mastered(t.id)?'<span class="tag done">✓ done</span>':(S.progress[t.id]?.c?`<span class="tag">${S.progress[t.id].c}/${S.settings.needed}</span>`:'')}</div>`;}).join('')+'</div>';
   }
   $('#browse-list').innerHTML=html||'<p class="muted">No matches.</p>';
-  $('#browse-count').textContent=`${count} shown`;
+  const uniq=new Set(), doneU=new Set(); T.terms.forEach(t=>{ if(hasImage(t.id)&&!S.removed.includes(t.id)){ uniq.add(t.id); if(mastered(t.id)) doneU.add(t.id);} });
+  $('#browse-count').textContent=`${count} shown · ${doneU.size} of ${uniq.size} quizzable terms done`;
   document.querySelectorAll('.term-item').forEach(el=>el.onclick=()=>browseOpen(el.dataset.id));
 }
 function browseOpen(id){
@@ -450,7 +453,7 @@ $('#bm-close').onclick=()=>$('#browse-modal').classList.add('hidden');
 $('#browse-modal').onclick=e=>{ if(e.target.id==='browse-modal') $('#browse-modal').classList.add('hidden'); };
 $('#bm-prev').onclick=()=>{bmIdx--;bmShow();}; $('#bm-next').onclick=()=>{bmIdx++;bmShow();};
 $('#bm-labeled').onclick=()=>{bmLab=!bmLab; $('#bm-labeled').textContent=bmLab?'Hide labels':'Labeled plate'; bmShow();};
-$('#browse-search').oninput=browseRender; $('#browse-missing').onchange=browseRender;
+$('#browse-search').oninput=browseRender; $('#browse-filter').onchange=browseRender;
 
 /* ---------------- settings UI ---------------- */
 function settingsRender(){
