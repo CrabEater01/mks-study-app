@@ -186,8 +186,8 @@ const prog = id => (S.progress[id] ||= {c:0,w:0});
 const mastered = id => (S.progress[id]?.c||0) >= S.settings.needed;
 function shuffle(a){ for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0; [a[i],a[j]]=[a[j],a[i]];} return a; }
 
-let queue=[], current=null, currentArrow=null, answered=false, session={right:0,wrong:0}, showingLabeled=false, lastImgFor={}, lockUntil=0;
-function lockKeys(){ lockUntil=Date.now()+600; }
+let queue=[], current=null, currentArrow=null, answered=false, session={right:0,wrong:0}, showingLabeled=false, lastImgFor={}, lockUntil=0, editing=null;
+function lockKeys(){ lockUntil=Date.now()+600; syncEditBtn(); }
 function holdFocus(){ const fb=$('#feedback'); fb.tabIndex=-1; fb.focus({preventScroll:true}); }
 function buildQueue(){
   const ids=eligibleTerms().filter(id=>!mastered(id));
@@ -211,7 +211,7 @@ function updateStats(){
 
 /* ---------------- quiz UI ---------------- */
 function nextCard(){
-  answered=false; showingLabeled=false; lockUntil=0;
+  answered=false; showingLabeled=false; lockUntil=0; endEdit(false);
   queue=queue.filter(id=>!mastered(id) && !S.removed.includes(id));
   const el=new Set(eligibleTerms()); queue=queue.filter(id=>el.has(id));
   if(!queue.length) buildQueue();
@@ -304,6 +304,7 @@ document.addEventListener('keydown',e=>{
   if(!$('#browse-modal').classList.contains('hidden')) return;
   e.preventDefault(); e.stopPropagation();          // stops a focused button from also "clicking"
   if(e.repeat || Date.now()<lockUntil) return;     // held key or bounce: ignore
+  if(editing) return;                               // finish or cancel the arrow edit first
   submit();
 },true);
 $('#btn-dontknow').onclick=()=>{ if(!current||answered) return; answered=true; record(false); showWrong('',null); };
@@ -313,7 +314,37 @@ $('#btn-hint').onclick=()=>{
   h.textContent='Hint: '+words.map(w=>w[0]+'·'.repeat(Math.max(0,w.length-1))).join('  ');
   h.className='hint';
 };
-$('#btn-labeled').onclick=()=>{ if(!currentArrow) return; showingLabeled=!showingLabeled; drawFigure($('#quiz-figure'),currentArrow,{labeled:showingLabeled}); $('#btn-labeled').textContent=showingLabeled?'Hide labels':'Show labeled plate'; };
+/* ---- edit the arrow from the quiz, after answering ---- */
+function syncEditBtn(){ $('#btn-editarrow').classList.toggle('hidden', !(answered && currentArrow) || !!editing); }
+function startEdit(){
+  if(!currentArrow||editing) return;
+  const id=currentArrow.id, before=JSON.parse(JSON.stringify(S.arrowEdits[id]||null));
+  editing={id, before};
+  const draw=()=>{ const a=arrow(ARROWS0.find(x=>x.id===id));
+    editing.ctl=drawFigure($('#quiz-figure'),a,{labeled:showingLabeled,draggable:true,onMove:(p)=>{
+      const e=S.arrowEdits[id]||(S.arrowEdits[id]={}); Object.assign(e,{x:+p.x.toFixed(4),y:+p.y.toFixed(4),a:Math.round(p.a),moved:true}); save();
+      $('#ea-msg').textContent='Moved. Press “Confirm arrow ✓” to save it as reviewed.'; }}); };
+  editing.draw=draw; draw();
+  const a0=ARROWS0.find(x=>x.id===id);
+  $('#ea-msg').textContent=a0.note?('Note: '+a0.note):'';
+  $('#edit-bar').classList.remove('hidden'); syncEditBtn();
+}
+function endEdit(redraw){
+  if(!editing) { $('#edit-bar').classList.add('hidden'); syncEditBtn(); return; }
+  const id=editing.id; editing=null; $('#edit-bar').classList.add('hidden');
+  if(redraw && currentArrow && currentArrow.id===id){ currentArrow=arrow(ARROWS0.find(x=>x.id===id)); drawFigure($('#quiz-figure'),currentArrow,{labeled:showingLabeled}); }
+  syncEditBtn(); lockKeys();
+}
+$('#btn-editarrow').onclick=startEdit;
+$('#ea-rotl').onclick=()=>editing&&editing.ctl.rotate(-30);
+$('#ea-rotr').onclick=()=>editing&&editing.ctl.rotate(30);
+$('#ea-reset').onclick=()=>{ if(!editing) return; const e=S.arrowEdits[editing.id]; if(e){ delete e.x; delete e.y; delete e.a; delete e.moved; } save(); editing.draw(); $('#ea-msg').textContent='Back to the original position.'; };
+$('#ea-ok').onclick=()=>{ if(!editing) return; const e=S.arrowEdits[editing.id]||(S.arrowEdits[editing.id]={}); e.status='ok'; save(); endEdit(true); flashEdit('✓ Arrow confirmed (counts as reviewed). Press Enter for the next card.'); };
+$('#ea-bad').onclick=()=>{ if(!editing) return; const e=S.arrowEdits[editing.id]||(S.arrowEdits[editing.id]={}); e.status='bad'; save(); endEdit(true); flashEdit('Arrow marked wrong. It won\'t be used in the quiz; you can fix it in Arrow review.'); };
+$('#ea-cancel').onclick=()=>{ if(!editing) return; if(editing.before) S.arrowEdits[editing.id]=editing.before; else delete S.arrowEdits[editing.id]; save(); endEdit(true); };
+function flashEdit(t){ const n=document.createElement('div'); n.className='small'; n.style.marginTop='8px'; n.textContent=t; $('#feedback').appendChild(n); }
+
+$('#btn-labeled').onclick=()=>{ if(!currentArrow) return; showingLabeled=!showingLabeled; if(editing) editing.draw(); else drawFigure($('#quiz-figure'),currentArrow,{labeled:showingLabeled}); $('#btn-labeled').textContent=showingLabeled?'Hide labels':'Show labeled plate'; };
 $('#btn-remove').onclick=()=>{
   if(!current) return; const b=$('#btn-remove');
   if(b.dataset.armed!=='1'){ b.dataset.armed='1'; b.textContent='Click again to remove'; setTimeout(()=>{b.dataset.armed='';b.textContent='Remove term';},2500); return; }

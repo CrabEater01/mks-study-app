@@ -35,8 +35,22 @@
         <button id="btn-hint" class="ghost">Hint</button>
         <button id="btn-dontknow" class="ghost">I don't know</button>
         <button id="btn-labeled" class="ghost">Show labeled plate</button>
+        <button id="btn-editarrow" class="ghost hidden">Edit arrow</button>
         <span class="spacer"></span>
         <button id="btn-remove" class="ghost danger" title="Never ask this term again (restore it in Settings)">Remove term</button>
+      </div>
+      <div id="edit-bar" class="feedback close hidden">
+        <div><b>Edit arrow:</b> drag the arrow tip onto the right spot, rotate it if needed, then confirm. A confirmed arrow counts as reviewed in Arrow review.</div>
+        <div class="tools-row">
+          <button id="ea-rotl" class="ghost" title="Rotate arrow">↺</button>
+          <button id="ea-rotr" class="ghost" title="Rotate arrow">↻</button>
+          <button id="ea-reset" class="ghost">Undo my changes</button>
+          <span class="spacer"></span>
+          <button id="ea-bad" class="ghost danger">Arrow is wrong / unclear</button>
+          <button id="ea-cancel" class="ghost">Cancel</button>
+          <button id="ea-ok" class="primary">Confirm arrow ✓</button>
+        </div>
+        <div id="ea-msg" class="muted small"></div>
       </div>
       <div id="hint" class="hint hidden"></div>
       <div id="feedback" class="feedback hidden"></div>
